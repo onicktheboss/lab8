@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="dashBoardStyle.css">
+</head>
+<body>
+<header>
+  <h2>XComapany</h2>
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Registration</a></li>
+    </ul>
+</header>
+
+<section> 
+  <nav>
+    <ul>
+      <li><a href="#">Dash Board</a></li>
+      <li><a href="#">View Profile</a></li>
+      <li><a href="#">Edit Profile</a></li>
+      <li><a href="#">Change Profile Picture</a></li>
+      <li><a href="#">Change Password</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>Hello</h1>
+    <p>Welcome To the xCompany.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Copyright 2017</p>
+</footer>
+
+</body>
+</html>
+
+.line{
+    width: 800px;
+    height: 0px;
+    border-bottom: 2px solid black;
+    position: absolute;
+}
+*{
+	box-sizing: border-box;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: right;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
