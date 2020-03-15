@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Add Data</title><link rel="stylesheet" type="text/css" href="style1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+ <style >
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar {
+  overflow: hidden;
+  background-color: #3300FF;
+}
+.company{
+
+float: right;
+  color: ##060000 ;
+  text-align: center;
+  text-transform: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.menubar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-transform: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menubar a:hover {
+  background-color: #3300FF;
+  color: black;
+}
+
+.menubar a.active {
+  background-color: #FFFFFF;
+  color: blue;
+}
+
+.button {
+  background-color: #3300FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ </style>
+<body>
+   <div class="menubar"> <a href="home.php">Home</a>
+    
+
+  
+    <a href="delete.php">Delete</a>
+    <a href="home.php">Home</a>
+    <a href="Changepass.php">CHANGE PASSWORD</a>
+    <a href="login.php">LOGOUT</a>
+    <div class="company"><h2>Aiub</h2></div>
+</div>
+<div style="padding-left:16px">
+    <form action="add.php" method="post" name="form1" enctype="multipart/form-data">
+        <table width="25%" border="0">
+             <tr>
+    
+           <td>Id</td>
+                <td><input type="text" name="id"></td>
+   
+ </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr> 
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr> 
+                <td>User name</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr> 
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male">Male</td>
+                <td><input type="radio" name="gender" value="Female">Female</td><br><br>
+            </tr>
+             <tr> 
+                <td>Date</td>
+                <td><input type="Date" name="dob"></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="hidden" name="size" value="1000000">
+                <input type="file" name="image">
+
+              </td>
+            </tr>
+
+            <tr> 
+                <td></td>
+                <td><input type="submit" name="Submit" value="Add"></td>
+            </tr>
+        </table>
+    </form>
+    </article>
+</body>
+</html>
